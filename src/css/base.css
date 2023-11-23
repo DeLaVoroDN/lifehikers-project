@@ -27,9 +27,9 @@ body {
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
   .container {
-    width: 1158px;
+    width: 1280px;
     margin-left: auto;
     margin-right: auto;
   }
