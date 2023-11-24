@@ -210,15 +210,65 @@ header a {
 
 
 /* Це для відцетровки меню при горизонтальному перегляді з телефона + щоб фонове зображення не залізало на лінки */
-@media (max-width: 1279px) and (max-height: 767px) and (min-width: 600px) {
+
+/* При горизонтальному просмотрі з мобілок і планшетів фоновий орнамент налізає на меню + на мобілках з вузьким екраном лінки уходять за межі екрану */
+/* Як по мені перший варіант виглядає краще всіх.  */
+/* По макету не зрозуміло що робити з горизонтальним просмотром, тому знизу декілька простих варіантів вирішення проблеми */
+/* У всіх варіантах меню стає по центру екрана, щоб точно ні наяких девайсах лінки не вилізали */
+/* Закоментуй всі варіанти крім того що дивишся */
+
+
+
+/* Вариант 1: меню по ширині як на мобілках орнамент по ширині як на мобілках і трохи виглядає знизу*/
+
+@media (orientation: landscape) and (max-height: 900px) {
+    .close-icon {
+        right: 20px;
+    }
+    .nav-list {
+        gap: 20px;
+    }
+    .tel-number {
+        width: 158px;
+        height: 38px;
+        left: 20px;
+    }
     .menu-container {
+        background-image: url(../img/mobmenu-back-mobile.png);
+        width: 274px;
         display: flex;
         align-items: center;
         padding: 0 20px;
         justify-content: flex-end;
-        background-image: none;
+        background-position: top 80vh center;
     }
 }
+
+
+
+/* Варіант 2: меню по ширині як на планшетах орнамент по ширині як на планшетах і трохи виглядає знизу */
+
+/* @media (orientation: landscape) and (max-height: 900px) {
+    .menu-container {
+        display: flex;
+        align-items: center;
+        padding: 0 32px;
+        justify-content: flex-end;
+        background-position: top 80vh center;
+    }
+} */
+
+
+/* Варіант 3: зображення зникає при горизонтальному просмотрі */
+/* @media (orientation: landscape) and (max-height: 900px) {
+    .menu-container {
+        display: flex;
+        align-items: center;
+        padding: 0 32px;
+        justify-content: flex-end;
+        background-image: none;
+    }
+} */
 
 
 
