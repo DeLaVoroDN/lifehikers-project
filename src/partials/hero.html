@@ -1,0 +1,57 @@
+<section class="hero">
+  <div class="container hero-container">
+    <div class="hero-container-group">
+      <div class="hero-title-container">
+        <h1 class="hero-title">
+          Reviving the traditional <span class="hero-title-span">Ukrainian</span> artistry in every
+          stitch.
+        </h1>
+
+        <a class="btn-order" href="#your-order"
+          >Order
+          <svg class="icon-arrow" width="26" height="10">
+            <use href="./img/icons.svg#icon-arrow"></use>
+          </svg>
+        </a>
+      </div>
+      <picture>
+        <!-- desctop -->
+        <picture>
+          <source
+            media="(min-width:1280px)"
+            srcset="./img/girl-desc.jpg 1x, ./img/girl-desc@2x.jpg 2x"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="./img/girl-tab.jpg 1x, ./img/girl-tab@2X.jpg 2x"
+          />
+
+          <source
+            media="(min-width:375px)"
+            srcset="./img/girl-mob.jpg 1x, ./img/girl-mob@2X.jpg 2x"
+          />
+
+          <img
+            class="hero-image-girl"
+            src="./img/girl-mob.jpg"
+            alt="Дівчина в вишиванці"
+            width="335"
+            height="545"
+          />
+        </picture>
+      </picture>
+    </div>
+
+    <div class="hero-group-image">
+      <div class="hero-icon-description-container">
+        <svg class="icon-hero" width="64" height="64">
+          <use href="./img/icons.svg#icon-star"></use>
+        </svg>
+        <p class="description">all embroidery is made by hand</p>
+      </div>
+      <div class="hero-image-container">
+        <img src="./img/hero-image-tab.jpg" alt="Українська вишиванка" />
+      </div>
+    </div>
+  </div>
+</section>
