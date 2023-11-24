@@ -52,3 +52,6 @@
 .style-text-footer {
   color: #ecd979;
 }
+
+@media screen and (min-width: 375px) {
+}
