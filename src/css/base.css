@@ -5,11 +5,6 @@ body {
   background: #1c2225;
 }
 
-.container {
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
 @media screen and (min-width: 375px) {
   .container {
     width: 375px;
