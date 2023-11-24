@@ -1,8 +1,9 @@
 .section-about {
   background-image: url('../img/orn-about-mob.png');
   background-repeat: no-repeat;
-  background-position: bottom -62px right 0px;
-  padding-bottom: 18px;
+  background-position: bottom -62px right 0;
+  padding-bottom: 62px;
+  margin-bottom: 18px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -31,9 +32,10 @@
 }
 @media screen and (min-width: 768px) {
   .section-about {
-    background-image: url ('../img/orn-about-tab.png');
+    background-image: url('../img/orn-about-tab.png');
     background-position: bottom -50px right 0px;
     padding-bottom: 50px;
+    margin-bottom: 50px;
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -49,11 +51,26 @@
   }
 }
 @media screen and (min-width: 1280px) {
+  .about-section-wrapper {
+    display: flex;
+    column-gap: 50px;
+  }
   .section-about {
-    background-image: url ('../img/orn-about-tab.png');
-    background-position: bottom -50px right 0px;
-    padding-bottom: 70px;
+    background-image: url(../img/orn-about-desc.png);
+    background-position: bottom -80px right 0px;
+    padding-bottom: 80px;
+    margin-bottom: 70px;
     padding-left: 100px;
     padding-right: 100px;
+  }
+  .text-about {
+    width: 436px;
+  }
+  .text-about-two {
+    margin-bottom: 0;
+  }
+  .about-section-text {
+    padding-top: 45px;
+    padding-bottom: 45px;
   }
 }
