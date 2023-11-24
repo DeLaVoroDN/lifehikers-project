@@ -16,10 +16,10 @@
 <symbol id="icon-youtube" viewBox="0 0 32 32">
 <path fill="#fcf9f9" style="fill: var(--color2, #fcf9f9)" opacity="0.8" d="M24.24 6c-1.36-0.080-4.16-0.16-8.4-0.16h-0.56c-4.080 0-6.8 0.080-8.16 0.24-1.84 0.16-3.12 0.64-3.84 1.28-0.64 0.56-1.12 1.6-1.28 2.96-0.080 0.88-0.16 2.72-0.16 5.52v0.4c0 2.64 0.080 4.48 0.24 5.36 0.24 1.28 0.64 2.24 1.44 2.8 0.8 0.64 2.16 1.040 4.080 1.2 1.36 0.080 4.16 0.16 8.4 0.16h0.56c4.080 0 6.8-0.080 8.16-0.24 1.84-0.16 3.12-0.64 3.84-1.28 0.64-0.56 1.12-1.6 1.28-2.96 0.080-0.88 0.16-2.72 0.16-5.52v-0.4c0-2.64-0.080-4.48-0.24-5.36-0.24-1.28-0.64-2.24-1.44-2.8-0.8-0.64-2.16-1.040-4.080-1.2zM21.12 15.84l-8.8 5.28v-10.56l8.8 5.28z"></path>
 </symbol>
-<symbol id="icon-burger" viewBox="0 0 32 32">
-<path  stroke="#ecd979" style="stroke: var(--color1, #ecd979)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.7778" d="M5.759 8.97h25.353"></path>
-<path  stroke="#ecd979" style="stroke: var(--color1, #ecd979)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.7778" d="M5.759 21.899h25.353"></path>
-<path  stroke="#ecd979" style="stroke: var(--color1, #ecd979)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.7778" d="M13.411 15.434h17.701"></path>
+<symbol id="icon-burger" viewBox="0 0 47 32">
+<path fill="none" stroke="#ecd979" style="stroke: var(--color2, #ecd979)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.2" d="M8.742 5.188h36.591"></path>
+<path fill="none" stroke="#ecd979" style="stroke: var(--color2, #ecd979)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.2" d="M8.742 24.582h36.591"></path>
+<path fill="none" stroke="#ecd979" style="stroke: var(--color2, #ecd979)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.2" d="M19.965 14.885h25.368"></path>
 </symbol>
 <symbol id="icon-close" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.7778" d="M24 8l-16 16"></path>
