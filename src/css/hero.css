@@ -1,8 +1,5 @@
 /* +++++++ HERO MOBILE SECTION +++++++*/
 
-.hero {
-  padding-bottom: 80px;
-}
 .hero-container {
   display: flex;
   justify-content: center;
@@ -19,8 +16,6 @@
   flex-direction: column;
 }
 
-.description {
-}
 .hero-title {
   width: 335px;
   font-size: 44px;
@@ -57,7 +52,6 @@
 }
 .icon-arrow {
   fill: #ecd979;
-  transform: rotate(-30deg);
 }
 .hero-group-image {
   display: none;
@@ -70,3 +64,98 @@
 }
 
 /* ======= /HERO MOBILE SECTION ======= */
+
+/* +++++++ HERO MOBILE SECTION (min-width: 320px)+++++++*/
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+/* ======= /HERO MOBILE SECTION (min-width: 320px)======= */
+
+/* +++++++ HERO MOBILE SECTION (min-width: 375px)+++++++*/
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+    margin: 0 auto;
+  }
+}
+/* ======= /HERO MOBILE SECTION (min-width: 375px)======= */
+
+/* +++++++ HERO MOBILE SECTION (min-width: 768px)+++++++*/
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+  .hero-container {
+    justify-content: space-between;
+  }
+  .hero-container-group {
+    align-items: flex-start;
+    margin-top: 106px;
+  }
+
+  .hero-title {
+    width: 549px;
+    font-size: 54px;
+    line-height: 1.18;
+  }
+
+  .btn-order {
+    margin-top: 40px;
+    margin-left: 141px;
+    font-size: 16px;
+  }
+
+  .hero-group-image {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 700px;
+  }
+
+  .hero-icon-description-container {
+    margin-left: 40px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .description {
+    width: 115px;
+    color: rgba(252, 249, 249, 0.4);
+
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.04em;
+  }
+  .hero-image-container {
+    width: 139px;
+    height: 197px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .hero-img-vishivanka {
+    padding-bottom: 70%;
+    width: 139px;
+    height: 197px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+  .hero-image-girl {
+    width: 413px;
+    height: 575px;
+    background: lightgray -59.284px -5.913px / 131.835% 126.432% no-repeat;
+  }
+}
+/* ======= /HERO MOBILE SECTION (min-width: 768px)======= */
