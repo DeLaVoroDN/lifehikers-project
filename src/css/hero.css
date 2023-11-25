@@ -143,7 +143,6 @@
 /* +++++++ HERO DESKTOP SECTION (min-width: 1280px)+++++++*/
 @media screen and (min-width: 1280px) {
   .hero-container {
-    width: 1280px;
     align-items: flex-start;
   }
   .hero-container-group {
