@@ -20,12 +20,24 @@ header a {
   display: flex;
 }
 
-.tel-number {
+.tel-link {  
   font-style: normal;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 15px;
+  position: relative;
+}
+.tel-link-span {
+  display: none;
+  text-transform: capitalize;
+  font-weight: 500;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  transition: transform 1000ms linear ,
+  color 400ms ease-out 600ms;
 }
 
 .social-links-and-burger-container {
@@ -75,7 +87,7 @@ header a {
     gap: 20px;
   }
 
-  .tel-number {
+  .tel-link {
     width: 158px;
     height: 38px;
     left: 20px;
@@ -117,10 +129,13 @@ header a {
     text-align: right;
   }
 
-  .tel-number {
+  .tel-link {
     border: 1px solid rgba(28, 34, 37, 0.1);
     position: absolute;
     top: 20px;
+  }  
+  .tel-link-span {
+    color: #1c2225;
   }
 }
 
@@ -141,7 +156,7 @@ header a {
     height: 44px;
   }
 
-  .tel-number {
+  .tel-link {
     left: 32px;
   }
 
@@ -155,7 +170,7 @@ header a {
     gap: 25px;
   }
 
-  .tel-number {
+  .tel-link {
     width: 193px;
     height: 48px;
   }
@@ -199,17 +214,20 @@ header a {
     color: #fcf9f9;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .tel-link-span {
+    color: #ecd979;
+  }
   .nav-link:hover,
   .nav-link:focus {
     color: #ecd979;
   }
-  .tel-number {
+  .tel-link {
     border: 1px solid rgba(252, 249, 249, 0.1);
     margin-left: auto;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .tel-number:hover,
-  .tel-number:focus {
+  .tel-link:hover,
+  .tel-link:focus {
     border-color:#ecd979;
   }
 }
@@ -233,7 +251,7 @@ header a {
     .nav-list {
         gap: 20px;
     }
-    .tel-number {
+    .tel-link {
         width: 158px;
         height: 38px;
         left: 20px;
