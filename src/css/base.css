@@ -17,7 +17,7 @@ body {
 
 @media screen and (min-width: 375px) {
   .container {
-    width: 335px;
+    width: 375px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 20px;
@@ -31,7 +31,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 704px;
+    width: 768px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 32px;
@@ -45,7 +45,7 @@ body {
 
 @media screen and (min-width: 1280px) {
   .container {
-    width: 1080px;
+    width: 1280px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 100px;
