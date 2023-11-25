@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/order.css" />
+    <title>Order</title>
+  </head>
+  <body>
+    <section class="section-order">
+      <div class="img-title-container"></div>
+      <div class="test-padding">
+        <div class="section-style">
+          <div class="img-order-container">
+            <div class="orn-background"></div>
+            <img src="./img/order-im-desc.jpg" alt="waistcoat" width="524px" height="521px" />
+          </div>
+          <div class="order-form-container">
+            <h2 class="order-title">
+              <span class="order-title-span">Your order</span> is our priority: Personalized
+              approach and quality of service
+            </h2>
+            <form action="#" class="order-form">
+              <label for="user-name" class="visually-hidden">Name</label>
+              <input
+                type="text"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}"
+                name="user-name"
+                id="user-name"
+                class="user-input"
+                placeholder="Enter your full name"
+              />
+              <label for="user-email" class="visually-hidden">Email</label>
+              <input
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}"
+                title="Invalid email address"
+                type="email"
+                name="user-email"
+                id="user-email"
+                class="user-input"
+                placeholder="Enter your email"
+              />
+              <label for="user-comment" class="visually-hidden">Comment</label>
+              <textarea
+                type="submit"
+                name="user-comment"
+                id="user-comment"
+                rows="7"
+                class="textarea-comment user-input"
+                placeholder="Comments"
+              ></textarea>
+              <button type="submit" class="form-order-btn">
+                send
+                <svg class="icon-arrow-order" width="26" height="22">
+                  <use href="./img/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
