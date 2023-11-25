@@ -20,12 +20,24 @@ header a {
   display: flex;
 }
 
-.tel-number {
+.tel-link {  
   font-style: normal;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 15px;
+  position: relative;
+}
+.tel-link-span {
+  display: none;
+  text-transform: capitalize;
+  font-weight: 500;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  transition: transform 1000ms linear ,
+  color 400ms ease-out 600ms;
 }
 
 .social-links-and-burger-container {
@@ -75,7 +87,7 @@ header a {
     gap: 20px;
   }
 
-  .tel-number {
+  .tel-link {
     width: 158px;
     height: 38px;
     left: 20px;
@@ -87,10 +99,9 @@ header a {
 }
 
 @media (max-width: 1279px) {
-  .header-container {
-    width: 100%;
-    justify-content: space-between;
-  }
+    .header-container {
+        justify-content: space-between;
+    }
 
   .close-icon {
     stroke: #1c2225;
@@ -118,10 +129,13 @@ header a {
     text-align: right;
   }
 
-  .tel-number {
+  .tel-link {
     border: 1px solid rgba(28, 34, 37, 0.1);
     position: absolute;
     top: 20px;
+  }  
+  .tel-link-span {
+    color: #1c2225;
   }
 }
 
@@ -142,7 +156,7 @@ header a {
     height: 44px;
   }
 
-  .tel-number {
+  .tel-link {
     left: 32px;
   }
 
@@ -156,7 +170,7 @@ header a {
     gap: 25px;
   }
 
-  .tel-number {
+  .tel-link {
     width: 193px;
     height: 48px;
   }
@@ -198,24 +212,88 @@ header a {
   .nav-link,
   .tel-link {
     color: #fcf9f9;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-
-  .tel-number {
+  .tel-link-span {
+    color: #ecd979;
+  }
+  .nav-link:hover,
+  .nav-link:focus {
+    color: #ecd979;
+  }
+  .tel-link {
     border: 1px solid rgba(252, 249, 249, 0.1);
     margin-left: auto;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .tel-link:hover,
+  .tel-link:focus {
+    border-color:#ecd979;
   }
 }
 
 /* Це для відцетровки меню при горизонтальному перегляді з телефона + щоб фонове зображення не залізало на лінки */
-@media (max-width: 1279px) and (max-height: 767px) and (min-width: 600px) {
-  .menu-container {
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    justify-content: flex-end;
-    background-image: none;
-  }
+
+/* При горизонтальному просмотрі з мобілок і планшетів фоновий орнамент налізає на меню + на мобілках з вузьким екраном лінки уходять за межі екрану */
+/* Як по мені перший варіант виглядає краще всіх.  */
+/* По макету не зрозуміло що робити з горизонтальним просмотром, тому знизу декілька простих варіантів вирішення проблеми */
+/* У всіх варіантах меню стає по центру екрана, щоб точно ні наяких девайсах лінки не вилізали */
+/* Закоментуй всі варіанти крім того що дивишся */
+
+
+
+/* Вариант 1: меню по ширині як на мобілках орнамент по ширині як на мобілках і трохи виглядає знизу*/
+
+@media (orientation: landscape) and (max-height: 900px) and (max-width: 1279px) {
+    .close-icon {
+        right: 20px;
+    }
+    .nav-list {
+        gap: 20px;
+    }
+    .tel-link {
+        width: 158px;
+        height: 38px;
+        left: 20px;
+    }
+    .menu-container {
+        background-image: url(../img/mobmenu-back-mobile.png);
+        width: 274px;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        justify-content: flex-end;
+        background-position: top 80vh center;
+    }
 }
+
+
+
+/* Варіант 2: меню по ширині як на планшетах орнамент по ширині як на планшетах і трохи виглядає знизу */
+
+/* @media (orientation: landscape) and (max-height: 900px) and (max-width: 1279px) {
+    .menu-container {
+        display: flex;
+        align-items: center;
+        padding: 0 32px;
+        justify-content: flex-end;
+        background-position: top 80vh center;
+    }
+} */
+
+
+/* Варіант 3: зображення зникає при горизонтальному просмотрі */
+/* @media (orientation: landscape) and (max-height: 900px) and (max-width: 1279px) {
+    .menu-container {
+        display: flex;
+        align-items: center;
+        padding: 0 32px;
+        justify-content: flex-end;
+        background-image: none;
+    }
+} */
+
+
 
 .is-open {
   transform: translateX(0%);
