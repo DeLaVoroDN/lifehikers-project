@@ -197,11 +197,20 @@ header a {
   .nav-link,
   .tel-link {
     color: #fcf9f9;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-
+  .nav-link:hover,
+  .nav-link:focus {
+    color: #ecd979;
+  }
   .tel-number {
     border: 1px solid rgba(252, 249, 249, 0.1);
     margin-left: auto;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .tel-number:hover,
+  .tel-number:focus {
+    border-color:#ecd979;
   }
 }
 
@@ -217,7 +226,7 @@ header a {
 
 /* Вариант 1: меню по ширині як на мобілках орнамент по ширині як на мобілках і трохи виглядає знизу*/
 
-@media (orientation: landscape) and (max-height: 900px) {
+@media (orientation: landscape) and (max-height: 900px) and (max-width: 1279px) {
     .close-icon {
         right: 20px;
     }
@@ -244,7 +253,7 @@ header a {
 
 /* Варіант 2: меню по ширині як на планшетах орнамент по ширині як на планшетах і трохи виглядає знизу */
 
-/* @media (orientation: landscape) and (max-height: 900px) {
+/* @media (orientation: landscape) and (max-height: 900px) and (max-width: 1279px) {
     .menu-container {
         display: flex;
         align-items: center;
@@ -256,7 +265,7 @@ header a {
 
 
 /* Варіант 3: зображення зникає при горизонтальному просмотрі */
-/* @media (orientation: landscape) and (max-height: 900px) {
+/* @media (orientation: landscape) and (max-height: 900px) and (max-width: 1279px) {
     .menu-container {
         display: flex;
         align-items: center;

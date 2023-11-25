@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;    /* Це треба для планого скролу сторінки, але не буде працювати якщо в браузері не ввімкнена ця функція  */
+}
 body {
   font-family: 'Manrope', sans-serif;
   font-size: 16px;
