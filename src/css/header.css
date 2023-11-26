@@ -181,10 +181,6 @@ header a {
     padding: 26px 16px 26px 16px;
   }
 
-  .container {
-    width: 1240px;
-  }
-
   .header-container {
     justify-content: flex-start;
   }
