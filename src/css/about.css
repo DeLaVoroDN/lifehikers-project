@@ -3,9 +3,9 @@
   background-repeat: no-repeat;
   background-position: bottom -62px right 0;
   padding-bottom: 62px;
-  margin-bottom: 18px;
-  padding-left: 20px;
-  padding-right: 20px;
+}
+.about-section-wrapper {
+  overflow: hidden;
 }
 .title-about {
   font-size: 32px;
@@ -21,7 +21,7 @@
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.04em;
-  width: 335px;
+  max-width: 335px;
   color: rgba(252, 249, 249, 0.4);
 }
 .text-about-one {
@@ -35,9 +35,6 @@
     background-image: url('../img/orn-about-tab.png');
     background-position: bottom -50px right 0px;
     padding-bottom: 50px;
-    margin-bottom: 50px;
-    padding-left: 32px;
-    padding-right: 32px;
   }
   .text-about {
     font-size: 16px;
@@ -59,9 +56,6 @@
     background-image: url(../img/orn-about-desc.png);
     background-position: bottom -80px right 0px;
     padding-bottom: 80px;
-    margin-bottom: 70px;
-    padding-left: 100px;
-    padding-right: 100px;
   }
   .text-about {
     width: 436px;
