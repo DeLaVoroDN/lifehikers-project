@@ -101,10 +101,11 @@
 
 /* ========== DESCTOP SCREEN ========== */
 @media screen and (min-width: 1280px) {
-  /* .container {
+  .container-testimonials {
     padding-right: 80px;
     padding-left: 80px;
-  } */
+  }
+
   .testimonials-section {
     padding-bottom: 150px;
   }
