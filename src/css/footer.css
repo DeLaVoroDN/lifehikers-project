@@ -58,68 +58,74 @@
   color: #ecd979;
 }
 
-/* Footer-tab Footer-desk style */
-
+/* =======FOOTER TABLET======= */
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-
-  .footer {
-    background-image: url(../img/orn-foot-tab.png) ;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-bottom: 40px;
-  }
-
   .site-links {
+    display: inline-flex;
     flex-wrap: nowrap;
     gap: 25px;
     margin-bottom: 80px;
+    margin-top: 40px;
   }
-
   .footer-list {
-    flex-basis: auto;
+    width: auto;
   }
-
   .text-footer {
-    max-width: 521px;
+    width: 521px;
     font-size: 54px;
-    line-height: 1.19;
-    margin-bottom: 0;
+    line-height: 1.18;
+    letter-spacing: -0.03em;
   }
-
-  .style-text-footer {
-    font-size: 54px;
-    line-height: 1.19;
+  .footer-content {
+    background: url('../img/orn-foot-tab.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 370px;
   }
 }
-
-@media screen and (min-width: 1110px) {
-  .container {
-      max-width: 1110px;
+/* =======/FOOTER TABLET======= */
+/* =======FOOTER TABLET======= */
+@media screen and (min-width: 1280px) {
+  .site-links {
+    gap: 25px;
+    margin-bottom: 80px;
+    margin-top: 40px;
   }
+  .text-footer {
+    width: 754px;
+    font-size: 64px;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+  }
+  .footer-content {
+    background: url('../img/orn-foot-tab.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 370px;
+  }
+}
+/* =======/FOOTER TABLET======= */
 
-  .footer {
-  background-image: url(../img/orn-foot-desc.png);
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: contain;
+/* =======FOOTER DESKTOP======= */
+@media screen and (min-width: 1280px) {
+  .site-links {
+    gap: 25px;
+    margin-bottom: 117px;
+  }
+  .text-footer {
+    width: 754px;
+    font-size: 64px;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+  }
+  .footer-content {
+    background: url('../img/orn-foot-desc.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
 }
-
-.site-links {
-  margin-bottom: 117px;
-}
-
-.text-footer {
-  max-width: 754px;
-  font-size: 64px;
-  line-height: 1.16;
-}
-
-.style-text-footer {
-font-size: 64px;
-line-height: 1.16;
-}
-}
+/* =======/FOOTER DESKTOP======= */
