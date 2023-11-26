@@ -1,7 +1,4 @@
-.our-collection {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
+
 .collection-title {
   text-align: center;
   font-size: 32px;
@@ -16,14 +13,12 @@
   display: flex;
   flex-wrap: wrap;
 }
+
 .our-collection-item-img {
   border-radius: 4px;
 }
 .our-collection-content {
   padding: 18px 0px 20px 0px;
-  border: 1px solid #676b88;
-  border-top: none;
-  cursor: pointer;
 }
 .our-collection-item-name {
   overflow: hidden;
@@ -51,6 +46,15 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+  .our-background{
+    position: absolute;
+    left: -127px;
+    width: 199px;
+    height: 177px;
+    top: 2417px;
+    background-image: url('../img/orn-coll-mob.png');
+    background-repeat: no-repeat;
+    }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -65,7 +69,17 @@
   .collection-list {
     width: calc((100% - 24px) / 2);
   }
+  .our-background{
+  position: absolute;
+  width: 338px;
+  height: 300px;
+  top: 2403px;
+  left: -224px;
+  background-image: url('../img/orn-our-tab.png');
+  background-repeat: no-repeat;
 
+  }
+  
   .our-collection-item-name,
   .collection-price {
     font-size: 18px;
@@ -80,7 +94,17 @@
 
   .collection-menu {
     column-gap: 20px;
-    row-gap: 40px;
+    row-gap: 40px;}
+
+    .our-background{
+      position: absolute;
+      width: 338px;
+      height: 300px;
+      top: 1783px;
+      left: -169px;
+      padding: 0px 0.45px 0.33px 0px;
+    background-image: url('../img/orn-coll-desc.png'); 
+    background-repeat: no-repeat;
   }
   .collection-list {
     width: calc((100% - 48px) / 3);
