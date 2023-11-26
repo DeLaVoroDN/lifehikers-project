@@ -99,9 +99,9 @@ header a {
 }
 
 @media (max-width: 1279px) {
-    .header-container {
-        justify-content: space-between;
-    }
+  .header-container {
+      justify-content: space-between;
+  }
 
   .close-icon {
     stroke: #1c2225;
@@ -180,11 +180,7 @@ header a {
   .page-header {
     padding: 26px 16px 26px 16px;
   }
-
-  .container {
-    width: 1240px;
-  }
-
+  
   .header-container {
     justify-content: flex-start;
   }
