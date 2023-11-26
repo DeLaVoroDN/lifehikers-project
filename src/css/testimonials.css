@@ -15,7 +15,7 @@
 
 .testimonials-list-item {
   position: relative;
-  width: calc(100%-52) / 3;
+  width: calc(100%-52px) / 3;
   padding: 0px 18px 18px 18px;
   border-radius: 4px;
   border: 1px solid rgba(252, 249, 249, 0.1);
