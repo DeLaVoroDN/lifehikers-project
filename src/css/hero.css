@@ -14,6 +14,7 @@
 .hero-title-container {
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
 }
 
 .hero-title {
@@ -68,7 +69,7 @@
 .hero-image-girl {
   margin-top: 40px;
   border-radius: 4px;
-  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+  border-radius: 4px;
 }
 
 /* ======= /HERO MOBILE SECTION ======= */
@@ -100,7 +101,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 695px;
+    gap: 694px;
   }
 
   .hero-icon-description-container {
@@ -138,11 +139,6 @@
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
   }
-  .hero-image-girl {
-    width: 413px;
-    height: 575px;
-    background: lightgray -59.284px -5.913px / 131.835% 126.432% no-repeat;
-  }
 }
 /* ======= /HERO TABLET SECTION (min-width: 768px)======= */
 
@@ -177,10 +173,6 @@
 
   .hero-image-girl {
     margin-top: 0;
-    width: 392px;
-    height: 545px;
-    border-radius: 4px;
-    background: lightgray -56.27px -5.605px / 131.835% 126.432% no-repeat;
   }
 }
 /* ======= /HERO DESKTOP SECTION (min-width: 1280px)======= */
