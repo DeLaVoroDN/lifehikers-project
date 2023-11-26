@@ -1,4 +1,8 @@
+.our-collection{
+padding-top: 18px;
+padding-bottom: 60px;
 
+}
 .collection-title {
   text-align: center;
   font-size: 32px;
@@ -48,13 +52,14 @@
   }
   .our-background{
     position: absolute;
-    left: -127px;
+    left: 2px;
+    z-index: -1;
     width: 199px;
     height: 177px;
     top: 2417px;
     background-image: url('../img/orn-coll-mob.png');
     background-repeat: no-repeat;
-    }
+}
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -74,9 +79,9 @@
   width: 338px;
   height: 300px;
   top: 2403px;
-  left: -224px;
+  left: 2px;
   background-image: url('../img/orn-our-tab.png');
-  background-repeat: no-repeat;
+ 
 
   }
   
@@ -101,10 +106,11 @@
       width: 338px;
       height: 300px;
       top: 1783px;
-      left: -169px;
-      padding: 0px 0.45px 0.33px 0px;
+     left: 8px;
     background-image: url('../img/orn-coll-desc.png'); 
     background-repeat: no-repeat;
+
+   
   }
   .collection-list {
     width: calc((100% - 48px) / 3);
