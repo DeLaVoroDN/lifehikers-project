@@ -1,6 +1,5 @@
 .footer-content {
   background: url('../img/orn-foot-mob.png');
-
   background-repeat: no-repeat;
   background-position: center bottom;
   padding-top: 40px;
@@ -13,16 +12,21 @@
   padding-right: 20px;
 }
 
+.footer-container-list {
+  display: flex;
+  flex-direction: column;
+}
+
 .site-links {
   margin-bottom: 40px;
-  gap: 25px 40px;
+  row-gap: 25px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
-.footer-list:not(:last-child) {
-  padding-bottom: 25px;
+.footer-list {
+  width: calc((100% - 40px) / 2);
 }
 
 .footer-link {
@@ -43,6 +47,7 @@
 
 .text-footer {
   color: #fcf9f9;
+  width: 335px;
   font-size: 44px;
   font-weight: 400;
   line-height: 54px;
@@ -51,7 +56,4 @@
 
 .style-text-footer {
   color: #ecd979;
-}
-
-@media screen and (min-width: 375px) {
 }
