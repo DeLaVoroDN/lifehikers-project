@@ -21,7 +21,7 @@
     
     
     <script type="module" crossorigin src="/lifehikers-project/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/lifehikers-project/assets/index-e4704b82.css">
+    <link rel="stylesheet" href="/lifehikers-project/assets/index-85f7749b.css">
   </head>
   <body>
     <header class="page-header">
@@ -354,18 +354,33 @@
   </div>
 </section>
 
-      <section class="testimonials-section" id="testimonials">
+      <!-- === SECTION TESTIMONIALS === -->
+<section class="testimonials-section" id="testimonials">
   <div class="container">
     <h2 class="testimonials-heading">Testimonials</h2>
     <ul class="testimonials-list list">
       <li class="testimonials-list-item">
-        <img
-          class="testimonials-list-avatar"
-          src="../img/maria-desc.png"
-          alt="Maria Tkachuk"
-          width="64"
-          height="64"
-        />
+        <picture class="testimonials-list-avatar">
+          <source
+            media="(min-width: 1280px)"
+            srcset="./img/maria-desc.png 1x, ../img/maria-desc@2x.png 2x"
+            width="64"
+            heigth="64"
+          />
+          <source
+            media="(min-width: 768px) and (max-width: 1279px)"
+            srcset="./img/maria-tab.png 1x, ../img/maria-tab@2x.png 2x"
+            width="64"
+            heigth="64"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="./img/maria-mob.png 1x, ../img/maria-mob@2x.png 2x"
+            width="64"
+            heigth="64"
+          />
+          <img src="/lifehikers-project/assets/maria-desc-c7fa1cf8.png" alt="Maria Tkachuk" />
+        </picture>
         <h3 class="testimonials-list-fullname">Maria Tkachuk</h3>
         <p class="testimonials-list-desc">
           I was pleasantly surprised by the variety of embroidery offered by Vyshyvanka Vibes. They
@@ -374,14 +389,22 @@
           detail.
         </p>
       </li>
-      <li class="testimonials-list-item">
-        <img
-          class="testimonials-list-avatar"
-          src="../img/sergey-desk.png"
-          alt="Maria Tkachuk"
-          width="64"
-          height="64"
-        />
+      <li class="testimonials-list-item testimonials-list-sergey">
+        <picture class="testimonials-list-avatar">
+          <source
+            media="(min-width: 1280px)"
+            srcset="./img/sergey-desk.png 1x, ../img/sergey-desk@2x.png 2x"
+            width="64"
+            heigth="64"
+          />
+          <source
+            media="(min-width: 768px) and (max-width: 1279px)"
+            srcset="./img/sergey-tab.png 1x, ../img/sergey-tab@2x.png 2x"
+            width="64"
+            heigth="64"
+          />
+          <img src="data:image/png;base64,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" alt="Sergey Rybachok" />
+        </picture>
         <h3 class="testimonials-list-fullname">Sergey Rybachok</h3>
         <p class="testimonials-list-desc">
           Vyshyvanka Vibes exceeds all my expectations! Their vyshyvanka are simply masterpieces! I
@@ -390,14 +413,16 @@
           unique.UR
         </p>
       </li>
-      <li class="testimonials-list-item">
-        <img
-          class="testimonials-list-avatar"
-          src="../img/nat-desc.png"
-          alt="Natalia Chatuk"
-          width="64"
-          height="64"
-        />
+      <li class="testimonials-list-item testimonials-list-natalia">
+        <picture class="testimonials-list-avatar">
+          <source
+            media="(min-width: 1280px)"
+            srcset="./img/nat-desc.png, ../img/nat-desk@2x.png 2x"
+            width="64"
+            heigth="64"
+          />
+          <img src="./img/nat-desk.png" alt="Natalia Chatuk" />
+        </picture>
         <h3 class="testimonials-list-fullname">Natalia Chatuk</h3>
         <p class="testimonials-list-desc">
           Vyshyvanka Vibes is a real find for everyone who appreciates Ukrainian culture. Their
@@ -409,6 +434,7 @@
     </ul>
   </div>
 </section>
+<!-- === /SECTION TESTIMONIALS/ === -->
 
     </main>
     <footer class="footer-content">
