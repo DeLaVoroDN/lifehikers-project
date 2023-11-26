@@ -1,7 +1,3 @@
-.section-order {
-  padding-bottom: 150px;
-}
-
 .img-title-container {
   margin: 0 auto;
   max-width: 375px;
@@ -11,39 +7,45 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  margin-bottom: 150px;
+  margin-bottom: 80px;
 }
 
-.test-padding {
+.section-order-padding-test {
+  max-width: 375px;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
 .section-style {
-  /* padding: 0 100px; */
   display: flex;
-  flex-direction: row;
-  gap: 50px;
-}
-
-.orn-background {
-  position: absolute;
-  bottom: 0;
-  left: -60px;
-  z-index: 9999;
-  width: 289px;
-  height: 484px;
-  background-image: url(../img/orn-order-desc.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  flex-direction: column-reverse;
 }
 
 .img-order-container {
   display: none;
   position: relative;
 }
+
+.orn-background {
+  position: absolute;
+  bottom: -78px;
+  left: -32px;
+  z-index: 9999;
+  width: 322px;
+  height: 484px;
+  background-image: url(../img/orn-order-tab.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-order {
+  margin-left: auto;
+}
+
 .order-form-container {
 }
+
 .order-title {
   width: 100%;
   margin-bottom: 40px;
@@ -52,11 +54,14 @@
   font-weight: 500;
   line-height: 44px;
 }
+
 .order-title-span {
   color: #ecd979;
 }
+
 .order-form {
 }
+
 .user-input {
   width: 100%;
   display: block;
@@ -85,6 +90,7 @@
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .form-order-btn {
   display: flex;
   margin: 0 auto;
@@ -150,16 +156,73 @@
   .img-title-container {
     background-size: cover;
   }
-
-  .test-padding {
-    padding: 0 20px;
-    width: 375px;
-    margin: 0 auto;
-  }
 }
 
 @media screen and (min-width: 768px) {
+  .section-order-padding-test {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  .img-title-container {
+    height: 776px;
+    max-width: 768px;
+    margin-bottom: 100px;
+  }
+
+  .img-order-container {
+    display: block;
+  }
+
+  .section-style {
+    flex-direction: column-reverse;
+    row-gap: 100px;
+  }
+
+  .order-title {
+    width: 542px;
+
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 53px;
+  }
+
+  .user-input {
+    width: 508px;
+  }
+
+  .form-order-btn {
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 1280px) {
+  .section-order-padding-test {
+    max-width: 1280px;
+    padding-left: 65px;
+    padding-right: 100px;
+  }
+
+  .img-title-container {
+    max-width: 1280px;
+    margin-bottom: 150px;
+  }
+
+  .section-style {
+    flex-direction: row;
+    column-gap: 50px;
+  }
+
+  .orn-background {
+    background-image: url(../img/orn-order-desc.png);
+  }
+
+  .img-order {
+    margin-left: 0;
+  }
+
+  .orn-background {
+    bottom: 0;
+    left: -65px;
+  }
 }
