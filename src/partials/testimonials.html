@@ -1,15 +1,30 @@
+<!-- === SECTION TESTIMONIALS === -->
 <section class="testimonials-section" id="testimonials">
   <div class="container">
     <h2 class="testimonials-heading">Testimonials</h2>
     <ul class="testimonials-list list">
       <li class="testimonials-list-item">
-        <img
-          class="testimonials-list-avatar"
-          src="../img/maria-desc.png"
-          alt="Maria Tkachuk"
-          width="64"
-          height="64"
-        />
+        <picture class="testimonials-list-avatar">
+          <source
+            media="(min-width: 1280px)"
+            srcset="./img/maria-desc.png 1x, ../img/maria-desc@2x.png 2x"
+            width="64"
+            heigth="64"
+          />
+          <source
+            media="(min-width: 768px) and (max-width: 1279px)"
+            srcset="./img/maria-tab.png 1x, ../img/maria-tab@2x.png 2x"
+            width="64"
+            heigth="64"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="./img/maria-mob.png 1x, ../img/maria-mob@2x.png 2x"
+            width="64"
+            heigth="64"
+          />
+          <img src="./img/maria-mob.png" alt="Maria Tkachuk" />
+        </picture>
         <h3 class="testimonials-list-fullname">Maria Tkachuk</h3>
         <p class="testimonials-list-desc">
           I was pleasantly surprised by the variety of embroidery offered by Vyshyvanka Vibes. They
@@ -18,14 +33,22 @@
           detail.
         </p>
       </li>
-      <li class="testimonials-list-item">
-        <img
-          class="testimonials-list-avatar"
-          src="../img/sergey-desk.png"
-          alt="Maria Tkachuk"
-          width="64"
-          height="64"
-        />
+      <li class="testimonials-list-item testimonials-list-sergey">
+        <picture class="testimonials-list-avatar">
+          <source
+            media="(min-width: 1280px)"
+            srcset="./img/sergey-desk.png 1x, ../img/sergey-desk@2x.png 2x"
+            width="64"
+            heigth="64"
+          />
+          <source
+            media="(min-width: 768px) and (max-width: 1279px)"
+            srcset="./img/sergey-tab.png 1x, ../img/sergey-tab@2x.png 2x"
+            width="64"
+            heigth="64"
+          />
+          <img src="./img/sergey-tab.png" alt="Sergey Rybachok" />
+        </picture>
         <h3 class="testimonials-list-fullname">Sergey Rybachok</h3>
         <p class="testimonials-list-desc">
           Vyshyvanka Vibes exceeds all my expectations! Their vyshyvanka are simply masterpieces! I
@@ -34,14 +57,16 @@
           unique.UR
         </p>
       </li>
-      <li class="testimonials-list-item">
-        <img
-          class="testimonials-list-avatar"
-          src="../img/nat-desc.png"
-          alt="Natalia Chatuk"
-          width="64"
-          height="64"
-        />
+      <li class="testimonials-list-item testimonials-list-natalia">
+        <picture class="testimonials-list-avatar">
+          <source
+            media="(min-width: 1280px)"
+            srcset="./img/nat-desc.png, ../img/nat-desk@2x.png 2x"
+            width="64"
+            heigth="64"
+          />
+          <img src="./img/nat-desk.png" alt="Natalia Chatuk" />
+        </picture>
         <h3 class="testimonials-list-fullname">Natalia Chatuk</h3>
         <p class="testimonials-list-desc">
           Vyshyvanka Vibes is a real find for everyone who appreciates Ukrainian culture. Their
@@ -53,3 +78,4 @@
     </ul>
   </div>
 </section>
+<!-- === /SECTION TESTIMONIALS/ === -->
