@@ -1,29 +1,38 @@
+/* ========== MOBILE SCREEN ========== */
+.testimonials-section {
+  padding-bottom: 80px;
+}
+
 .testimonials-heading {
-  font-size: 44px;
+  font-size: 32px;
   font-weight: 500;
-  line-height: 1.45;
-  letter-spacing: -1.32px;
+  line-height: 1.38;
+  letter-spacing: -0.03em;
   margin-bottom: 64px;
 }
 
-.testimonials-list {
-  display: flex;
-  align-items: flex-start;
-  column-gap: 26px;
-  margin-bottom: 150px;
+.testimonials-list-sergey {
+  display: none;
+}
+
+.testimonials-list-natalia {
+  display: none;
 }
 
 .testimonials-list-item {
   position: relative;
-  width: calc(100%-52px) / 3;
   padding: 0px 18px 18px 18px;
   border-radius: 4px;
   border: 1px solid rgba(252, 249, 249, 0.1);
+  color: rgba(252, 249, 249, 0.4);
+  text-align: center;
+  font-size: 14px;
+  line-height: normal;
 }
 
 .testimonials-list-avatar {
   position: absolute;
-  top: 0;
+  top: 3%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 64px;
@@ -39,14 +48,81 @@
   line-height: 1.5;
   margin-top: 54px;
   margin-bottom: 8px;
+  color: #fcf9f9;
 }
 
 .testimonials-list-desc {
-  width: 307px;
-  height: 175px;
+  width: 291px;
+  height: 133px;
   color: rgba(252, 249, 249, 0.4);
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: normal;
 }
+/* ========== /MOBILE SCREEN/ ========== */
+
+/* ========== TABLET SCREEN ========== */
+@media screen and (min-width: 768px) {
+  .testimonials-section {
+    padding-bottom: 100px;
+  }
+
+  .testimonials-heading {
+    font-size: 44px;
+    line-height: 1.45;
+  }
+
+  .testimonials-list-sergey {
+    display: inline;
+  }
+
+  .testimonials-list {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 32px;
+  }
+
+  .testimonials-list-item {
+    width: calc((100% - 32px) / 2);
+  }
+
+  .testimonials-list-avatar {
+    top: 2.5%;
+  }
+
+  .testimonials-list-desc {
+    font-size: 16px;
+    width: 300px;
+    height: 176px;
+  }
+}
+/* ========== /TABLET SCREEN/ ========== */
+
+/* ========== DESCTOP SCREEN ========== */
+@media screen and (min-width: 1280px) {
+  /* .container {
+    padding-right: 80px;
+    padding-left: 80px;
+  } */
+  .testimonials-section {
+    padding-bottom: 150px;
+  }
+
+  .testimonials-list-natalia {
+    display: inline;
+  }
+
+  .testimonials-list {
+    column-gap: 26px;
+  }
+
+  .testimonials-list-item {
+    width: calc((100% - 52px) / 3);
+  }
+
+  .testimonials-list-desc {
+    width: 307px;
+  }
+}
+/* ========== /DESCTOP SCREEN/ ========== */
