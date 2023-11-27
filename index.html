@@ -21,7 +21,7 @@
     
     
     <script type="module" crossorigin src="/lifehikers-project/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/lifehikers-project/assets/index-0109301e.css">
+    <link rel="stylesheet" href="/lifehikers-project/assets/index-b697623a.css">
   </head>
   <body>
     <header class="page-header">
@@ -295,21 +295,31 @@
   </div>
 </section>
 
-      <section class="section" id="your-order">
+      <section class="section section-order">
   <div class="img-title-container"></div>
-  <div class="section-order-padding-test">
+  <div class="section-order-padding">
     <div class="section-style">
       <div class="img-order-container">
         <div class="orn-background"></div>
-        <img
-          class="img-order"
-          srcset="/lifehikers-project/assets/order-im-tab-c0911bf5.jpg 638w, /lifehikers-project/assets/order-im-tab@2x-1e9043b9.jpg 1276w, /lifehikers-project/assets/order-im-desc-070a5624.jpg 524w, /lifehikers-project/assets/order-im-desc@2x-ca4700a9.jpg 1048w"
-          sizes="(min-width: 1280px) 524px, (min-width: 768px) 638px"
-          src="/lifehikers-project/assets/order-im-tab-c0911bf5.jpg"
-          alt="Product company"
-        />
+        <div class="img-product-container">
+          <picture class="img-product">
+            <source
+              media="(min-width: 1280px)"
+              srcset="/lifehikers-project/assets/order-im-desc-070a5624.jpg 1x, /lifehikers-project/assets/order-im-desc@2x-ca4700a9.jpg 2x"
+              width="524"
+              heigth="521"
+            />
+            <source
+              media="(min-width: 768px) and (max-width: 1279px)"
+              srcset="/lifehikers-project/assets/order-im-tab-c0911bf5.jpg 1x, /lifehikers-project/assets/order-im-tab@2x-1e9043b9.jpg 2x"
+              width="638"
+              height="521"
+            />
+            <img src="/lifehikers-project/assets/order-im-tab-c0911bf5.jpg" alt="Product company" width="638" height="521" />
+          </picture>
+        </div>
       </div>
-      <div class="order-form-container">
+      <div class="order-form-container" id="you-order">
         <h2 class="order-title">
           <span class="order-title-span">Your order</span> is our priority: Personalized approach
           and quality of service
