@@ -13,6 +13,9 @@ body {
     width: 320px;
     margin: 0 auto;
   }
+  .section {
+    padding-bottom: 80px;
+  }
 }
 
 @media screen and (min-width: 375px) {

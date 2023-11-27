@@ -1,5 +1,4 @@
-.our-collection{
-  padding-top: 80px;
+.our-collection {
   padding-bottom: 80px;
 }
 .collection-title {
@@ -12,6 +11,16 @@
   margin-bottom: 40px;
 }
 
+/* .our-background {
+  position: absolute;
+  left: 2px;
+  z-index: -1;
+  width: 199px;
+  height: 177px;
+  top: 2500px;
+  background-image: url('../img/orn-coll-mob.png');
+  background-repeat: no-repeat;
+} */
 .collection-menu {
   display: flex;
   flex-wrap: wrap;
@@ -49,7 +58,7 @@
     padding-left: 20px;
     padding-right: 20px;
   }
-  .our-background{
+  .our-background {
     position: absolute;
     left: 2px;
     z-index: -1;
@@ -58,7 +67,7 @@
     top: 2500px;
     background-image: url('../img/orn-coll-mob.png');
     background-repeat: no-repeat;
-}
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -73,18 +82,18 @@
   .collection-list {
     width: calc((100% - 24px) / 2);
   }
-  .our-background{
-  position: absolute;
-  width: 338px;
-  height: 300px;
-  left: 6px;
-  z-index: -1;
-  top: 2690px;
-  background-image: url('../img/orn-our-tab.png');
-  background-repeat: no-repeat;
-  padding: 0px 0.453px 0.334px 0px;
+  .our-background {
+    position: absolute;
+    width: 338px;
+    height: 300px;
+    left: 6px;
+    z-index: -1;
+    top: 2690px;
+    background-image: url('../img/orn-our-tab.png');
+    background-repeat: no-repeat;
+    padding: 0px 0.453px 0.334px 0px;
   }
-  
+
   .our-collection-item-name,
   .collection-price {
     font-size: 18px;
@@ -99,20 +108,19 @@
 
   .collection-menu {
     column-gap: 20px;
-    row-gap: 40px;}
+    row-gap: 40px;
+  }
 
-    .our-background{
-      position: absolute;
-      width: 338px;
-      height: 300px;
-     left: 6px;
-     z-index: -1;
-     top: 1950px;
-    background-image: url('../img/orn-coll-desc.png'); 
+  .our-background {
+    position: absolute;
+    width: 338px;
+    height: 300px;
+    left: 6px;
+    z-index: -1;
+    top: 1950px;
+    background-image: url('../img/orn-coll-desc.png');
     background-repeat: no-repeat;
     padding: 0px 0.453px 0.334px 0px;
-
-
   }
   .collection-list {
     width: calc((100% - 48px) / 3);
