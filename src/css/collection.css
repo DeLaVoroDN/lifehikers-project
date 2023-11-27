@@ -1,4 +1,7 @@
-
+.our-collection{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
 .collection-title {
   text-align: center;
   font-size: 32px;
@@ -52,7 +55,7 @@
     z-index: -1;
     width: 199px;
     height: 177px;
-    top: 2417px;
+    top: 2500px;
     background-image: url('../img/orn-coll-mob.png');
     background-repeat: no-repeat;
 }
@@ -74,11 +77,12 @@
   position: absolute;
   width: 338px;
   height: 300px;
-  top: 2403px;
-  left: 2px;
+  left: 6px;
+  z-index: -1;
+  top: 2690px;
   background-image: url('../img/orn-our-tab.png');
- 
-
+  background-repeat: no-repeat;
+  padding: 0px 0.453px 0.334px 0px;
   }
   
   .our-collection-item-name,
@@ -101,12 +105,14 @@
       position: absolute;
       width: 338px;
       height: 300px;
-      top: 1783px;
-     left: 8px;
+     left: 6px;
+     z-index: -1;
+     top: 1950px;
     background-image: url('../img/orn-coll-desc.png'); 
     background-repeat: no-repeat;
+    padding: 0px 0.453px 0.334px 0px;
 
-   
+
   }
   .collection-list {
     width: calc((100% - 48px) / 3);
