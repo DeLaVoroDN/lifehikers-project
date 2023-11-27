@@ -1,23 +1,28 @@
-<section class="section" id="your-order">
+<section class="section section-order">
   <div class="img-title-container"></div>
-  <div class="section-order-padding-test">
+  <div class="section-order-padding">
     <div class="section-style">
       <div class="img-order-container">
         <div class="orn-background"></div>
-        <img
-          class="img-order"
-          srcset="
-            ./img/order-im-tab.jpg      638w,
-            ./img/order-im-tab@2x.jpg  1276w,
-            ./img/order-im-desc.jpg     524w,
-            ./img/order-im-desc@2x.jpg 1048w
-          "
-          sizes="(min-width: 1280px) 524px, (min-width: 768px) 638px"
-          src="./img/order-im-tab.jpg"
-          alt="Product company"
-        />
+        <div class="img-product-container">
+          <picture class="img-product">
+            <source
+              media="(min-width: 1280px)"
+              srcset="./img/order-im-desc.jpg 1x, ./img/order-im-desc@2x.jpg 2x"
+              width="524"
+              heigth="521"
+            />
+            <source
+              media="(min-width: 768px) and (max-width: 1279px)"
+              srcset="./img/order-im-tab.jpg 1x, ./img/order-im-tab@2x.jpg 2x"
+              width="638"
+              height="521"
+            />
+            <img src="./img/order-im-tab.jpg" alt="Product company" width="638" height="521" />
+          </picture>
+        </div>
       </div>
-      <div class="order-form-container">
+      <div class="order-form-container" id="you-order">
         <h2 class="order-title">
           <span class="order-title-span">Your order</span> is our priority: Personalized approach
           and quality of service
