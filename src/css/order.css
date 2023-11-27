@@ -1,16 +1,23 @@
+.section-order {
+  background-image: none;
+  background-size: 322px 484px;
+  background-position: bottom 100px left 0;
+  background-repeat: no-repeat;
+}
+
 .img-title-container {
   margin: 0 auto;
   max-width: 375px;
   height: 550px;
   background-image: url(../img/girl-gr-mob.jpg);
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   margin-bottom: 80px;
 }
 
-.section-order-padding-test {
+.section-order-padding {
   max-width: 375px;
   margin: 0 auto;
   padding: 0 20px;
@@ -23,12 +30,11 @@
 
 .img-order-container {
   display: none;
-  position: relative;
 }
 
-.orn-background {
+/* .orn-background {
   position: absolute;
-  bottom: -78px;
+  bottom: 0;
   left: -32px;
   z-index: 9999;
   width: 322px;
@@ -37,9 +43,15 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+} */
+
+.img-product-container {
+  height: 600px;
 }
 
-.img-order {
+.img-product {
+  display: block;
+  width: 638px;
   margin-left: auto;
 }
 
@@ -159,7 +171,11 @@
 }
 
 @media screen and (min-width: 768px) {
-  .section-order-padding-test {
+  .section-order {
+    background-image: url(../img/orn-order-tab.png);
+  }
+
+  .section-order-padding {
     max-width: 768px;
     padding: 0 32px;
   }
@@ -197,7 +213,12 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .section-order-padding-test {
+  .section-order {
+    background-image: url(../img/orn-order-desc.png);
+    background-position: bottom 150px left 0;
+  }
+
+  .section-order-padding {
     max-width: 1280px;
     padding-left: 65px;
     padding-right: 100px;
@@ -213,12 +234,13 @@
     column-gap: 50px;
   }
 
-  .orn-background {
-    background-image: url(../img/orn-order-desc.png);
+  .img-product {
+    width: 524px;
+    margin: 0;
   }
 
-  .img-order {
-    margin-left: 0;
+  .order-title {
+    height: 174px;
   }
 
   .orn-background {
