@@ -30,6 +30,9 @@
 .text-about-two {
   margin-bottom: 50px;
 }
+.img-about {
+  border-radius: 4px;
+}
 @media screen and (min-width: 768px) {
   .section-about {
     background-image: url('../img/orn-about-tab.png');
@@ -38,7 +41,7 @@
   }
   .text-about {
     font-size: 16px;
-    width: 704px;
+    max-width: 704px;
   }
   .text-about-two {
     margin-bottom: 40px;
@@ -58,7 +61,7 @@
     padding-bottom: 80px;
   }
   .text-about {
-    width: 436px;
+    max-width: 436px;
   }
   .text-about-two {
     margin-bottom: 0;
