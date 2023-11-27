@@ -11,16 +11,16 @@
   margin-bottom: 40px;
 }
 
-/* .our-background {
+.our-background {
   position: absolute;
-  left: 2px;
+  left: 8px;
   z-index: -1;
   width: 199px;
   height: 177px;
-  top: 2500px;
+  top: 2430px;
   background-image: url('../img/orn-coll-mob.png');
   background-repeat: no-repeat;
-} */
+}
 .collection-menu {
   display: flex;
   flex-wrap: wrap;
@@ -59,14 +59,8 @@
     padding-right: 20px;
   }
   .our-background {
-    position: absolute;
-    left: 2px;
-    z-index: -1;
-    width: 199px;
-    height: 177px;
-    top: 2500px;
-    background-image: url('../img/orn-coll-mob.png');
-    background-repeat: no-repeat;
+    left: -1px;
+    top: 2411px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -83,14 +77,12 @@
     width: calc((100% - 24px) / 2);
   }
   .our-background {
-    position: absolute;
     width: 338px;
     height: 300px;
-    left: 6px;
+    left: -1px;
     z-index: -1;
-    top: 2690px;
+    top: 2430px;
     background-image: url('../img/orn-our-tab.png');
-    background-repeat: no-repeat;
     padding: 0px 0.453px 0.334px 0px;
   }
 
@@ -115,9 +107,9 @@
     position: absolute;
     width: 338px;
     height: 300px;
-    left: 6px;
+    left: -1px;
     z-index: -1;
-    top: 1950px;
+    top: 1820px;
     background-image: url('../img/orn-coll-desc.png');
     background-repeat: no-repeat;
     padding: 0px 0.453px 0.334px 0px;
