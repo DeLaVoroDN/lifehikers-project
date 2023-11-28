@@ -10,13 +10,11 @@
               media="(min-width: 1280px)"
               srcset="./img/order-im-desc.jpg 1x, ./img/order-im-desc@2x.jpg 2x"
               width="524"
-              heigth="521"
             />
             <source
               media="(min-width: 768px) and (max-width: 1279px)"
               srcset="./img/order-im-tab.jpg 1x, ./img/order-im-tab@2x.jpg 2x"
               width="638"
-              height="521"
             />
             <img src="./img/order-im-tab.jpg" alt="Product company" width="638" height="521" />
           </picture>
@@ -33,6 +31,7 @@
             type="text"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}"
             name="user-name"
+            required
             id="user-name"
             class="user-input"
             placeholder="Enter your full name"
@@ -43,14 +42,15 @@
             title="Invalid email address"
             type="email"
             name="user-email"
+            required
             id="user-email"
             class="user-input"
             placeholder="Enter your email"
           />
           <label for="user-comment" class="visually-hidden">Comment</label>
           <textarea
-            type="submit"
             name="user-comment"
+            required
             id="user-comment"
             rows="7"
             class="textarea-comment user-input"

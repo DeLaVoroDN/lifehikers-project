@@ -20,7 +20,7 @@ header a {
   display: flex;
 }
 
-.tel-link {  
+.tel-link {
   font-style: normal;
   display: flex;
   justify-content: center;
@@ -36,8 +36,7 @@ header a {
   bottom: -30px;
   left: 50%;
   transform: translate(-50%, 0%);
-  transition: transform 1000ms linear ,
-  color 400ms ease-out 600ms;
+  transition: transform 1000ms linear, color 400ms ease-out 600ms;
 }
 
 .social-links-and-burger-container {
@@ -68,9 +67,16 @@ header a {
   border-color: #ecd979;
 }
 
+.svg-button-head {
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+
 @media (max-width: 767px) {
   .page-header {
-    padding: 20px;
+    padding: 20px 0;
   }
 
   .menu-container {
@@ -100,7 +106,7 @@ header a {
 
 @media (max-width: 1279px) {
   .header-container {
-      justify-content: space-between;
+    justify-content: space-between;
   }
 
   .close-icon {
@@ -133,7 +139,7 @@ header a {
     border: 1px solid rgba(28, 34, 37, 0.1);
     position: absolute;
     top: 20px;
-  }  
+  }
   .tel-link-span {
     color: #1c2225;
   }
@@ -141,7 +147,7 @@ header a {
 
 @media (min-width: 768px) and (max-width: 1279px) {
   .page-header {
-    padding: 20px 32px;
+    padding: 20px 0;
   }
 
   .menu-container {
@@ -178,7 +184,7 @@ header a {
 
 @media (min-width: 1280px) {
   .page-header {
-    padding: 26px 16px 26px 16px;
+    padding: 26px 0;
   }
 
   .header-container {
@@ -224,7 +230,7 @@ header a {
   }
   .tel-link:hover,
   .tel-link:focus {
-    border-color:#ecd979;
+    border-color: #ecd979;
   }
 }
 
@@ -236,34 +242,30 @@ header a {
 /* У всіх варіантах меню стає по центру екрана, щоб точно ні наяких девайсах лінки не вилізали */
 /* Закоментуй всі варіанти крім того що дивишся */
 
-
-
 /* Вариант 1: меню по ширині як на мобілках орнамент по ширині як на мобілках і трохи виглядає знизу*/
 
 @media (orientation: landscape) and (max-height: 900px) and (max-width: 1279px) {
-    .close-icon {
-        right: 20px;
-    }
-    .nav-list {
-        gap: 20px;
-    }
-    .tel-link {
-        width: 158px;
-        height: 38px;
-        left: 20px;
-    }
-    .menu-container {
-        background-image: url(../img/mobmenu-back-mobile.png);
-        width: 274px;
-        display: flex;
-        align-items: center;
-        padding: 0 20px;
-        justify-content: flex-end;
-        background-position: top 80vh center;
-    }
+  .close-icon {
+    right: 20px;
+  }
+  .nav-list {
+    gap: 20px;
+  }
+  .tel-link {
+    width: 158px;
+    height: 38px;
+    left: 20px;
+  }
+  .menu-container {
+    background-image: url(../img/mobmenu-back-mobile.png);
+    width: 274px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: flex-end;
+    background-position: top 80vh center;
+  }
 }
-
-
 
 /* Варіант 2: меню по ширині як на планшетах орнамент по ширині як на планшетах і трохи виглядає знизу */
 
@@ -277,7 +279,6 @@ header a {
     }
 } */
 
-
 /* Варіант 3: зображення зникає при горизонтальному просмотрі */
 /* @media (orientation: landscape) and (max-height: 900px) and (max-width: 1279px) {
     .menu-container {
@@ -288,8 +289,6 @@ header a {
         background-image: none;
     }
 } */
-
-
 
 .is-open {
   transform: translateX(0%);
