@@ -1,6 +1,5 @@
 .our-collection {
   padding-top: 18px;
-  padding-bottom: 80px;
 }
 .collection-title {
   text-align: center;
@@ -31,10 +30,12 @@
   border-radius: 4px;
 }
 .our-collection-content {
-  padding: 18px 0px 20px 0px;
+  padding: 18px 0 20px 0;
 }
 .our-collection-item-name {
   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   color: #fcf9f9;
   text-overflow: ellipsis;
   font-size: 14px;
@@ -84,6 +85,10 @@
 
   .our-collection {
     padding-top: 50px;
+  }
+
+  .our-collection-content {
+    padding: 18px 0 0;
   }
 
   .collection-menu {

@@ -1,7 +1,7 @@
 .section-about {
   background-image: url('../img/orn-about-mob.png');
   background-repeat: no-repeat;
-  background-position: bottom -62px right 0;
+  background-position: bottom 0px right 0;
   padding-bottom: 62px;
 }
 .about-section-wrapper {
@@ -38,7 +38,7 @@
 @media screen and (min-width: 768px) {
   .section-about {
     background-image: url('../img/orn-about-tab.png');
-    background-position: bottom -50px right 0px;
+    background-position: bottom 0px right 0px;
     padding-bottom: 50px;
   }
 
@@ -67,7 +67,7 @@
 
   .section-about {
     background-image: url(../img/orn-about-desc.png);
-    background-position: bottom -80px right 0px;
+    background-position: bottom 0px right 0px;
     padding-bottom: 80px;
   }
   .text-about {
