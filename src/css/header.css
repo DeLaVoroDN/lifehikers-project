@@ -67,12 +67,6 @@ header a {
   border-color: #ecd979;
 }
 
-.svg-button-head {
-  border: none;
-  padding: 0;
-  background: none;
-  cursor: pointer;
-}
 
 @media (max-width: 767px) {
   .page-header {
