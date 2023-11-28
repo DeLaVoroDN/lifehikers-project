@@ -10,8 +10,9 @@ body {
 
 @media screen and (min-width: 320px) {
   .container {
-    width: 320px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 1px;
   }
   .section {
     padding-bottom: 80px;

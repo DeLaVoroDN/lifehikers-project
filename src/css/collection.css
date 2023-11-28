@@ -1,4 +1,5 @@
 .our-collection {
+  padding-top: 18px;
   padding-bottom: 80px;
 }
 .collection-title {
@@ -53,14 +54,26 @@
   letter-spacing: 0.04em;
   text-align: left;
 }
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .our-collection-item-img {
+    width: 319px;
+  }
+
+  .our-background {
+    left: -1px;
+    top: 2400px;
+  }
+}
 @media screen and (min-width: 375px) {
   .container {
     padding-left: 20px;
     padding-right: 20px;
   }
+
   .our-background {
     left: -1px;
-    top: 2411px;
+    top: 2425px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -69,19 +82,23 @@
     padding-right: 32px;
   }
 
+  .our-collection {
+    padding-top: 50px;
+  }
+
   .collection-menu {
     column-gap: 20px;
     row-gap: 20px;
   }
   .collection-list {
-    width: calc((100% - 24px) / 2);
+    width: calc((100% - 23px) / 2);
   }
   .our-background {
     width: 338px;
     height: 300px;
     left: -1px;
     z-index: -1;
-    top: 2430px;
+    top: 2490px;
     background-image: url('../img/orn-our-tab.png');
     padding: 0px 0.453px 0.334px 0px;
   }
@@ -98,6 +115,10 @@
     padding-right: 100px;
   }
 
+  .our-collection {
+    padding-top: 70px;
+  }
+
   .collection-menu {
     column-gap: 20px;
     row-gap: 40px;
@@ -109,7 +130,7 @@
     height: 300px;
     left: -1px;
     z-index: -1;
-    top: 1820px;
+    top: 1890px;
     background-image: url('../img/orn-coll-desc.png');
     background-repeat: no-repeat;
     padding: 0px 0.453px 0.334px 0px;
