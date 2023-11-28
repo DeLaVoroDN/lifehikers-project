@@ -61,11 +61,18 @@
 
 /* =======FOOTER TABLET======= */
 @media screen and (min-width: 768px) {
+  .container-holder {
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-left: auto;
+    margin: auto;
+  }
   .site-links {
     display: inline-flex;
     flex-wrap: nowrap;
     gap: 25px;
-    padding-bottom: 80px;
+    margin-bottom: 0;
+    padding-bottom: 117px;
     padding-top: 40px;
   }
   .footer-list {
@@ -87,36 +94,15 @@
   }
 }
 /* =======/FOOTER TABLET======= */
-/* =======FOOTER TABLET======= */
-@media screen and (min-width: 1280px) {
-  .site-links {
-    gap: 25px;
-    margin-bottom: 80px;
-    margin-top: 40px;
-  }
-  .text-footer {
-    width: 754px;
-    font-size: 64px;
-    line-height: 1.15;
-    letter-spacing: -0.03em;
-  }
-  .footer-content {
-    background: url('../img/orn-foot-tab.png');
-    background-repeat: no-repeat;
-    background-position: center right;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    height: 370px;
-  }
-}
-/* =======/FOOTER TABLET======= */
-
 /* =======FOOTER DESKTOP======= */
 @media screen and (min-width: 1280px) {
-  .site-links {
-    gap: 25px;
-    margin-bottom: 117px;
+  .container-holder {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: auto;
+    margin: auto;
   }
+
   .text-footer {
     width: 754px;
     font-size: 64px;
@@ -127,6 +113,9 @@
     background: url('../img/orn-foot-desc.png');
     background-repeat: no-repeat;
     background-position: center right;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 370px;
   }
 }
 /* =======/FOOTER DESKTOP======= */
