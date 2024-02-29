@@ -1,81 +1,92 @@
+/* Общие стили для секции "О нас" */
 .section-about {
-  background-image: url('../img/orn-about-mob.png');
-  background-repeat: no-repeat;
-  background-position: bottom 0px right 0;
-  padding-bottom: 62px;
-}
-.about-section-wrapper {
-  overflow: hidden;
-}
-.about-section-text {
-  margin-bottom: 50px;
+  background-image: url('../img/orn-about-mob.png'); /* Фоновое изображение */
+  background-repeat: no-repeat; /* Запрет повторения фонового изображения */
+  background-position: bottom 0px right 0; /* Положение фонового изображения */
+  padding-bottom: 62px; /* Внутренний отступ снизу */
 }
 
+.about-section-wrapper {
+  overflow: hidden; /* Скрытие содержимого, выходящего за границы контейнера */
+}
+
+.about-section-text {
+  margin-bottom: 50px; /* Внутренний отступ снизу */
+}
+
+/* Заголовок секции "О нас" */
 .title-about {
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: -0.03em;
-  text-transform: capitalize;
-  color: inherit;
-  margin-bottom: 40px;
+  font-size: 32px; /* Размер шрифта */
+  font-weight: 500; /* Начертание шрифта */
+  line-height: 1.5; /* Межстрочный интервал */
+  letter-spacing: -0.03em; /* Межбуквенный интервал */
+  text-transform: capitalize; /* Преобразование текста в заглавные буквы */
+  color: inherit; /* Наследование цвета текста */
+  margin-bottom: 40px; /* Внутренний отступ снизу */
 }
+
+/* Текст секции "О нас" */
 .text-about {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.04em;
-  max-width: 335px;
-  color: rgba(252, 249, 249, 0.4);
+  font-size: 14px; /* Размер шрифта */
+  font-weight: 400; /* Начертание шрифта */
+  line-height: normal; /* Нормальный межстрочный интервал */
+  letter-spacing: -0.04em; /* Межбуквенный интервал */
+  max-width: 335px; /* Максимальная ширина текста */
+  color: rgba(252, 249, 249, 0.4); /* Цвет текста */
 }
+
 .text-about-one {
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Внутренний отступ снизу */
 }
 
 .img-about {
-  border-radius: 4px;
+  border-radius: 4px; /* Радиус скругления углов изображения */
 }
+
+/* Медиа-запросы */
 @media screen and (min-width: 768px) {
   .section-about {
-    background-image: url('../img/orn-about-tab.png');
-    background-position: bottom 0px right 0px;
-    padding-bottom: 50px;
+    background-image: url('../img/orn-about-tab.png'); /* Фоновое изображение для планшетов */
+    background-position: bottom 0px right 0px; /* Положение фонового изображения */
+    padding-bottom: 50px; /* Внутренний отступ снизу */
   }
 
   .about-section-text {
-    margin-bottom: 40px;
+    margin-bottom: 40px; /* Внутренний отступ снизу */
   }
 
   .text-about {
-    font-size: 16px;
-    max-width: 704px;
+    font-size: 16px; /* Размер шрифта */
+    max-width: 704px; /* Максимальная ширина текста */
   }
 
   .title-about {
-    font-size: 44px;
+    font-size: 44px; /* Размер шрифта */
   }
 }
+
 @media screen and (min-width: 1280px) {
   .about-section-wrapper {
-    display: flex;
-    column-gap: 50px;
+    display: flex; /* Отображение дочерних элементов в виде флекс-контейнера */
+    column-gap: 50px; /* Расстояние между элементами */
   }
 
   .about-section-text {
-    margin-bottom: 0;
+    margin-bottom: 0; /* Удаление внутреннего отступа снизу */
   }
 
   .section-about {
-    background-image: url(../img/orn-about-desc.png);
-    background-position: bottom 0px right 0px;
-    padding-bottom: 80px;
+    background-image: url(../img/orn-about-desc.png); /* Фоновое изображение для больших экранов */
+    background-position: bottom 0px right 0px; /* Положение фонового изображения */
+    padding-bottom: 80px; /* Внутренний отступ снизу */
   }
+
   .text-about {
-    max-width: 436px;
+    max-width: 436px; /* Максимальная ширина текста */
   }
 
   .about-section-text {
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 45px; /* Внутренний отступ сверху */
+    padding-bottom: 45px; /* Внутренний отступ снизу */
   }
 }

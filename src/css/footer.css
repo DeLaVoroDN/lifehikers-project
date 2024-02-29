@@ -1,121 +1,133 @@
+/* Стили для содержимого подвала */
 .footer-content {
-  background: url('../img/orn-foot-mob.png');
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  padding-top: 40px;
-  padding-bottom: 280px;
-  border-top: 1px solid rgba(252, 249, 249, 0.1);
+  background: url('../img/orn-foot-mob.png'); /* Фоновое изображение */
+  background-repeat: no-repeat; /* Не повторять фон */
+  background-position: center bottom; /* Положение фона */
+  padding-top: 40px; /* Внутренний отступ сверху */
+  padding-bottom: 280px; /* Внутренний отступ снизу */
+  border-top: 1px solid rgba(252, 249, 249, 0.1); /* Верхняя граница */
 }
 
+/* Контейнер подвала */
 .container-holder {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 20px; /* Внутренний отступ слева */
+  padding-right: 20px; /* Внутренний отступ справа */
 }
 
+/* Список элементов в подвале */
 .footer-container-list {
-  display: flex;
-  flex-direction: column;
+  display: flex; /* Отображение элементов в строку */
+  flex-direction: column; /* Направление элементов */
 }
 
+/* Ссылки на сайт */
 .site-links {
-  margin-bottom: 40px;
-  row-gap: 25px;
-  column-gap: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  margin-bottom: 40px; /* Внутренний отступ снизу */
+  row-gap: 25px; /* Горизонтальный отступ между элементами */
+  column-gap: 40px; /* Вертикальный отступ между элементами */
+  display: flex; /* Отображение элементов в строку */
+  flex-wrap: wrap; /* Обертка элементов по нескольку строкам */
+  flex-direction: row; /* Направление элементов */
 }
 
+/* Элемент списка в подвале */
 .footer-list {
-  width: calc((100% - 88px) / 2);
+  width: calc((100% - 88px) / 2); /* Ширина списка */
 }
 
+/* Ссылка в подвале */
 .footer-link {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.28;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  text-transform: uppercase;
-  color: #fcf9f9;
+  font-size: 14px; /* Размер шрифта */
+  font-style: normal; /* Обычный стиль */
+  font-weight: 400; /* Нормальный текст */
+  line-height: 1.28; /* Межстрочный интервал */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавное изменение цвета */
+  text-transform: uppercase; /* Преобразование текста в верхний регистр */
+  color: #fcf9f9; /* Цвет текста */
 }
 
+/* При наведении на ссылку в подвале */
 .footer-link:hover,
 .footer-link:focus {
-  color: #ecd979;
+  color: #ecd979; /* Изменение цвета текста */
 }
 
+/* Текст в подвале */
 .text-footer {
-  color: #fcf9f9;
-  width: 100%;
-  font-size: 44px;
-  font-weight: 400;
-  line-height: 1.22;
-  letter-spacing: -0.03em;
+  color: #fcf9f9; /* Цвет текста */
+  width: 100%; /* Ширина */
+  font-size: 44px; /* Размер шрифта */
+  font-weight: 400; /* Нормальный текст */
+  line-height: 1.22; /* Межстрочный интервал */
+  letter-spacing: -0.03em; /* Межбуквенное расстояние */
 }
 
+/* Стили для текста в подвале */
 .style-text-footer {
-  color: #ecd979;
+  color: #ecd979; /* Цвет текста */
 }
 
-/* =======FOOTER TABLET======= */
+/* Медиа-запросы для планшетов */
 @media screen and (min-width: 768px) {
   .container-holder {
-    padding-left: 32px;
-    padding-right: 32px;
-    margin-left: auto;
-    margin: auto;
+    padding-left: 32px; /* Внутренний отступ слева */
+    padding-right: 32px; /* Внутренний отступ справа */
+    margin-left: auto; /* Автоматический отступ слева */
+    margin-right: auto; /* Автоматический отступ справа */
   }
+
   .site-links {
-    display: inline-flex;
-    flex-wrap: nowrap;
-    gap: 25px;
-    margin-bottom: 0;
-    padding-bottom: 117px;
-    padding-top: 40px;
+    display: inline-flex; /* Отображение элементов в строчку */
+    flex-wrap: nowrap; /* Запрет оборачивания элементов */
+    gap: 25px; /* Отступ между элементами */
+    margin-bottom: 0; /* Убрать внутренний отступ снизу */
+    padding-bottom: 117px; /* Внутренний отступ снизу */
+    padding-top: 40px; /* Внутренний отступ сверху */
   }
+
   .footer-list {
-    width: auto;
-  }
-  .text-footer {
-    width: 521px;
-    font-size: 54px;
-    line-height: 1.18;
-    letter-spacing: -0.03em;
-  }
-  .footer-content {
-    background: url('../img/orn-foot-tab.png');
-    background-repeat: no-repeat;
-    background-position: center right;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    height: 370px;
-  }
-}
-/* =======/FOOTER TABLET======= */
-/* =======FOOTER DESKTOP======= */
-@media screen and (min-width: 1280px) {
-  .container-holder {
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-left: auto;
-    margin: auto;
+    width: auto; /* Автоматическая ширина */
   }
 
   .text-footer {
-    width: 754px;
-    font-size: 64px;
-    line-height: 1.15;
-    letter-spacing: -0.03em;
+    width: 521px; /* Ширина текста */
+    font-size: 54px; /* Размер шрифта */
+    line-height: 1.18; /* Межстрочный интервал */
+    letter-spacing: -0.03em; /* Межбуквенное расстояние */
   }
+
   .footer-content {
-    background: url('../img/orn-foot-desc.png');
-    background-repeat: no-repeat;
-    background-position: center right;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    height: 370px;
+    background: url('../img/orn-foot-tab.png'); /* Фоновое изображение */
+    background-repeat: no-repeat; /* Не повторять фон */
+    background-position: center right; /* Положение фона */
+    padding-top: 0px; /* Внутренний отступ сверху */
+    padding-bottom: 0px; /* Внутренний отступ снизу */
+    height: 370px; /* Высота */
   }
 }
-/* =======/FOOTER DESKTOP======= */
+
+/* Медиа-запросы для десктопов */
+@media screen and (min-width: 1280px) {
+  .container-holder {
+    padding-left: 100px; /* Внутренний отступ слева */
+    padding-right: 100px; /* Внутренний отступ справа */
+    margin-left: auto; /* Автоматический отступ слева */
+    margin-right: auto; /* Автоматический отступ справа */
+  }
+
+  .text-footer {
+    width: 754px; /* Ширина текста */
+    font-size: 64px; /* Размер шрифта */
+    line-height: 1.15; /* Межстрочный интервал */
+    letter-spacing: -0.03em; /* Межбуквенное расстояние */
+  }
+
+  .footer-content {
+    background: url('../img/orn-foot-desc.png'); /* Фоновое изображение */
+    background-repeat: no-repeat; /* Не повторять фон */
+    background-position: center right; /* Положение фона */
+    padding-top: 0px; /* Внутренний отступ сверху */
+    padding-bottom: 0px; /* Внутренний отступ снизу */
+    height: 370px; /* Высота */
+  }
+}

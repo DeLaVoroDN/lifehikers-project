@@ -1,62 +1,66 @@
+/* Общие стили для HTML и body */
 html {
-  scroll-behavior: smooth; /* Це треба для планого скролу сторінки, але не буде працювати якщо в браузері не ввімкнена ця функція  */
-}
-body {
-  font-family: 'Manrope', sans-serif;
-  font-size: 16px;
-  color: #fcf9f9;
-  background: #1c2225;
+  scroll-behavior: smooth; /* Плавный скролл страницы */
 }
 
+body {
+  font-family: 'Manrope', sans-serif; /* Шрифт текста */
+  font-size: 16px; /* Размер текста */
+  color: #fcf9f9; /* Цвет текста */
+  background: #1c2225; /* Фоновый цвет */
+}
+
+/* Медиа-запросы для разных разрешений экрана */
 @media screen and (min-width: 320px) {
   .container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 1px;
+    width: 100%; /* Ширина контейнера */
+    margin: 0 auto; /* Центрирование контейнера */
+    padding: 0 1px; /* Внутренние отступы контейнера */
   }
+
   .section {
-    padding-bottom: 80px;
+    padding-bottom: 80px; /* Внутренний отступ снизу */
   }
 }
 
 @media screen and (min-width: 375px) {
   .container {
-    width: 375px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 375px; /* Ширина контейнера */
+    margin-left: auto; /* Выравнивание контейнера по левому краю */
+    margin-right: auto; /* Выравнивание контейнера по правому краю */
+    padding-left: 20px; /* Внутренний отступ слева */
+    padding-right: 20px; /* Внутренний отступ справа */
   }
 
   .section {
-    padding-bottom: 80px;
+    padding-bottom: 80px; /* Внутренний отступ снизу */
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 32px;
-    padding-right: 32px;
+    width: 768px; /* Ширина контейнера */
+    margin-left: auto; /* Выравнивание контейнера по левому краю */
+    margin-right: auto; /* Выравнивание контейнера по правому краю */
+    padding-left: 32px; /* Внутренний отступ слева */
+    padding-right: 32px; /* Внутренний отступ справа */
   }
 
   .section {
-    padding-bottom: 100px;
+    padding-bottom: 100px; /* Внутренний отступ снизу */
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
-    width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 100px;
-    padding-right: 100px;
+    width: 1280px; /* Ширина контейнера */
+    margin-left: auto; /* Выравнивание контейнера по левому краю */
+    margin-right: auto; /* Выравнивание контейнера по правому краю */
+    padding-left: 100px; /* Внутренний отступ слева */
+    padding-right: 100px; /* Внутренний отступ справа */
   }
 
   .section {
-    padding-bottom: 150px;
+    padding-bottom: 150px; /* Внутренний отступ снизу */
   }
 }

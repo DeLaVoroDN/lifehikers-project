@@ -1,146 +1,165 @@
+/* Общие стили для блока "Our Collection" */
 .our-collection {
-  padding-top: 18px;
+  padding-top: 18px; /* Внутренний отступ сверху */
 }
+
+/* Заголовок коллекции */
 .collection-title {
-  text-align: center;
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 1.37;
-  letter-spacing: 0.02em;
-  color: #fcf9f9;
-  margin-bottom: 40px;
+  text-align: center; /* Выравнивание текста по центру */
+  font-size: 32px; /* Размер шрифта */
+  font-weight: 500; /* Полужирный текст */
+  line-height: 1.37; /* Межстрочный интервал */
+  letter-spacing: 0.02em; /* Межбуквенное расстояние */
+  color: #fcf9f9; /* Цвет текста */
+  margin-bottom: 40px; /* Внутренний отступ снизу */
 }
 
+/* Фоновое изображение */
 .our-background {
-  position: absolute;
-  left: 8px;
-  z-index: -1;
-  width: 199px;
-  height: 177px;
-  top: 2430px;
-  background-image: url('../img/orn-coll-mob.png');
-  background-repeat: no-repeat;
+  position: absolute; /* Абсолютное позиционирование */
+  left: 8px; /* Отступ слева */
+  z-index: -1; /* Задний фон */
+  width: 199px; /* Ширина */
+  height: 177px; /* Высота */
+  top: 2430px; /* Отступ сверху */
+  background-image: url('../img/orn-coll-mob.png'); /* Изображение фона */
+  background-repeat: no-repeat; /* Повторение фона */
 }
+
+/* Меню коллекции */
 .collection-menu {
-  display: flex;
-  flex-wrap: wrap;
+  display: flex; /* Отображение элементов в строку */
+  flex-wrap: wrap; /* Обертка элементов по нескольку строкам */
 }
 
+/* Элемент коллекции */
 .our-collection-item-img {
-  border-radius: 4px;
-}
-.our-collection-content {
-  padding: 18px 0 20px 0;
-}
-.our-collection-item-name {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  color: #fcf9f9;
-  text-overflow: ellipsis;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  text-align: left;
-  margin-bottom: 8px;
-}
-.collection-price {
-  color: rgba(252, 249, 249, 0.4);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 0.04em;
-  text-align: left;
+  border-radius: 4px; /* Радиус скругления углов */
 }
 
+/* Контент коллекции */
+.our-collection-content {
+  padding: 18px 0 20px 0; /* Внутренние отступы */
+}
+
+/* Название элемента коллекции */
+.our-collection-item-name {
+  overflow: hidden; /* Скрытие излишков текста */
+  white-space: nowrap; /* Перенос текста */
+  text-overflow: ellipsis; /* Многоточие для обрезанного текста */
+  color: #fcf9f9; /* Цвет текста */
+  font-size: 14px; /* Размер шрифта */
+  font-style: normal; /* Стиль шрифта */
+  font-weight: 500; /* Полужирный текст */
+  line-height: 1; /* Межстрочный интервал */
+  letter-spacing: 0.04em; /* Межбуквенное расстояние */
+  text-transform: uppercase; /* Преобразование текста в верхний регистр */
+  text-align: left; /* Выравнивание текста по левому краю */
+  margin-bottom: 8px; /* Внутренний отступ снизу */
+}
+
+/* Цена коллекции */
+.collection-price {
+  color: rgba(252, 249, 249, 0.4); /* Цвет текста */
+  font-size: 14px; /* Размер шрифта */
+  font-weight: 400; /* Нормальный текст */
+  line-height: 1; /* Межстрочный интервал */
+  letter-spacing: 0.04em; /* Межбуквенное расстояние */
+  text-align: left; /* Выравнивание текста по левому краю */
+}
+
+/* Медиа-запросы для разных разрешений экрана */
 @media screen and (min-width: 320px) and (max-width: 374px) {
   .our-collection-item-img {
-    width: 319px;
+    width: 319px; /* Ширина изображения */
   }
 
   .our-background {
-    left: -1px;
-    top: 2400px;
+    left: -1px; /* Отступ слева */
+    top: 2400px; /* Отступ сверху */
   }
 }
+
 @media screen and (min-width: 375px) {
   .container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 20px; /* Внутренний отступ слева */
+    padding-right: 20px; /* Внутренний отступ справа */
   }
 
   .our-background {
-    left: -1px;
-    top: 2425px;
+    left: -1px; /* Отступ слева */
+    top: 2425px; /* Отступ сверху */
   }
 }
+
 @media screen and (min-width: 768px) {
   .container {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 32px; /* Внутренний отступ слева */
+    padding-right: 32px; /* Внутренний отступ справа */
   }
 
   .our-collection {
-    padding-top: 50px;
+    padding-top: 50px; /* Внутренний отступ сверху */
   }
 
   .our-collection-content {
-    padding: 18px 0 0;
+    padding: 18px 0 0; /* Внутренние отступы */
   }
 
   .collection-menu {
-    column-gap: 20px;
-    row-gap: 20px;
+    column-gap: 20px; /* Горизонтальный отступ между элементами */
+    row-gap: 20px; /* Вертикальный отступ между элементами */
   }
+
   .collection-list {
-    width: calc((100% - 23px) / 2);
+    width: calc((100% - 23px) / 2); /* Ширина списка */
   }
+
   .our-background {
-    width: 338px;
-    height: 300px;
-    left: -1px;
-    z-index: -1;
-    top: 2390px;
-    background-image: url('../img/orn-our-tab.png');
-    padding: 0px 0.453px 0.334px 0px;
+    width: 338px; /* Ширина */
+    height: 300px; /* Высота */
+    left: -1px; /* Отступ слева */
+    z-index: -1; /* Задний фон */
+    top: 2390px; /* Отступ сверху */
+    background-image: url('../img/orn-our-tab.png'); /* Изображение фона */
+    padding: 0px 0.453px 0.334px 0px; /* Внутренние отступы */
   }
 
   .our-collection-item-name,
   .collection-price {
-    font-size: 18px;
-    letter-spacing: 0.05em;
+    font-size: 18px; /* Размер шрифта */
+    letter-spacing: 0.05em; /* Межбуквенное расстояние */
   }
 }
+
 @media screen and (min-width: 1280px) {
   .container {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 100px; /* Внутренний отступ слева */
+    padding-right: 100px; /* Внутренний отступ справа */
   }
 
   .our-collection {
-    padding-top: 70px;
+    padding-top: 70px; /* Внутренний отступ сверху */
   }
 
   .collection-menu {
-    column-gap: 20px;
-    row-gap: 40px;
+    column-gap: 20px; /* Горизонтальный отступ между элементами */
+    row-gap: 40px; /* Вертикальный отступ между элементами */
   }
 
   .our-background {
-    position: absolute;
-    width: 338px;
-    height: 300px;
-    left: -1px;
-    z-index: -1;
-    top: 1790px;
-    background-image: url('../img/orn-coll-desc.png');
-    background-repeat: no-repeat;
-    padding: 0px 0.453px 0.334px 0px;
+    position: absolute; /* Абсолютное позиционирование */
+    width: 338px; /* Ширина */
+    height: 300px; /* Высота */
+    left: -1px; /* Отступ слева */
+    z-index: -1; /* Задний фон */
+    top: 1790px; /* Отступ сверху */
+    background-image: url('../img/orn-coll-desc.png'); /* Изображение фона */
+    background-repeat: no-repeat; /* Повторение фона */
+    padding: 0px 0.453px 0.334px 0px; /* Внутренние отступы */
   }
+
   .collection-list {
-    width: calc((100% - 48px) / 3);
+    width: calc((100% - 48px) / 3); /* Ширина списка */
   }
 }
